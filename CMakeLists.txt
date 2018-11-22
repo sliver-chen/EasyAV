@@ -27,6 +27,7 @@ file(GLOB SRC_FILES
         src/Media/*.cpp
         src/Util/*.c
         src/Util/*.cpp
+        src/Event/*.cpp
         )
 
 #generate shared library
