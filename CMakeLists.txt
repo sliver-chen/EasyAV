@@ -32,6 +32,7 @@ file(GLOB SRC_FILES
 
 #generate shared library
 add_library(easyav SHARED ${SRC_FILES})
+target_link_libraries(easyav pthread)
 
 macro(example module)
     add_executable(${module}Test example/${module}Test.cpp)
