@@ -12,6 +12,7 @@ set(CMAKE_CXX_STANDARD 11)
 #definitions
 if (CMAKE_BUILD_TYPE STREQUAL Debug)
     add_definitions(-DDEBUG)
+    set(CMAKE_CXX_FLAGS "-g")
 endif ()
 
 #include top directory
@@ -40,5 +41,6 @@ macro(example module)
 endmacro()
 
 example(Util)
+example(Event)
 example(TcpServer)
 example(RtspServer)

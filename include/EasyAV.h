@@ -5,7 +5,8 @@
 #ifndef EASYAV_EASYAV_H
 #define EASYAV_EASYAV_H
 
-#include "EasyAV/Util/EasyLog.h"
+#include "EasyAV/Util/EasyUtil.h"
+#include "EasyAV/Event/Event.h"
 #include "EasyAV/Socket/TcpSocket.h"
 #include "EasyAV/Socket/TcpServer.h"
 
