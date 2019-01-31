@@ -1,0 +1,6 @@
+macro(example unit file)
+    include_directories(${CMAKE_SOURCE_DIR}/include)
+    link_directories(${CMAKE_SOURCE_DIR}/src)
+    add_executable($unit $file)
+    target_link_libraries($unit easyav)
+endmacro()

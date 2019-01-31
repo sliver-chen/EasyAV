@@ -1,0 +1,11 @@
+macro(unit_test exe file)
+    include_directories(${CMAKE_SOURCE_DIR}/include)
+    link_directories(${CMAKE_SOURCE_DIR}/src)
+    add_executable(${exe} ${file})
+    target_link_libraries(${exe} easyav)
+endmacro()
+
+unit_test(EventTest Event/EventTest.cpp)
+unit_test(RtspServerTest Media/RtspServerTest.cpp)
+unit_test(TcpServerTest Socket/TcpServerTest.cpp)
+unit_test(UtilTest  Util/UtilTest.cpp)
